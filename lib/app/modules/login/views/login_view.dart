@@ -8,7 +8,7 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFF1F1F1),
       body: Stack(
         children: [
           Container(
@@ -37,6 +37,7 @@ class LoginView extends GetView<LoginController> {
                   "Welcome to",
                   style: TextStyle(
                     fontSize: 22,
+                    color: Color(0xFF22215B),
                   ),
                 ),
                 Text(
@@ -53,6 +54,8 @@ class LoginView extends GetView<LoginController> {
                     "Best cloud storage platform for all bussiness and idividuals to manage their data\n\nJoin For Free",
                     style: TextStyle(
                       fontSize: 16,
+                      color: Color(0xFF22215B),
+                      fontWeight: FontWeight.w300,
                     ),
                   ),
                 ),
@@ -114,12 +117,14 @@ class LoginView extends GetView<LoginController> {
                     "Use Social Login",
                     style: TextStyle(
                       fontSize: 16,
+                      color: Color(0xFF22215B),
+                      fontWeight: FontWeight.w400,
                     ),
                   ),
                 ),
                 SizedBox(height: 30),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset("assets/icons/ig.png"),
                     SizedBox(width: 30),
@@ -134,6 +139,8 @@ class LoginView extends GetView<LoginController> {
                     "Create an account",
                     style: TextStyle(
                       fontSize: 16,
+                      color: Color(0xFF22215B),
+                      fontWeight: FontWeight.w400,
                     ),
                   ),
                 ),
