@@ -1,3 +1,5 @@
+import 'package:dirbbox/app/modules/profile/views/profile_view.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -54,8 +56,7 @@ class LoginView extends GetView<LoginController> {
                     "Best cloud storage platform for all bussiness and idividuals to manage their data\n\nJoin For Free",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Color(0xFF22215B),
-                      fontWeight: FontWeight.w300,
+                      color: Color(0xFF22215B).withOpacity(0.6),
                     ),
                   ),
                 ),
@@ -64,11 +65,16 @@ class LoginView extends GetView<LoginController> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     ElevatedButton(
-                      onPressed: () {}, 
+                      onPressed: () {
+                        Get.to(ProfileView());
+                      },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset("assets/icons/finger.png"),
+                          Icon(
+                            Icons.fingerprint,
+                            color: Color(0xFF567DF4),
+                          ),
                           SizedBox(width: 10),
                           Text(
                             "Smart Id",
@@ -87,7 +93,9 @@ class LoginView extends GetView<LoginController> {
                       ),
                     ),
                     ElevatedButton(
-                      onPressed: () {}, 
+                      onPressed: () {
+                        Get.to(ProfileView());
+                      },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -98,7 +106,10 @@ class LoginView extends GetView<LoginController> {
                             ),
                           ),
                           SizedBox(width: 10),
-                          Image.asset("assets/icons/panah-kanan.png"),
+                          Icon(
+                            Icons.east,
+                            size: 20,
+                          ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
@@ -117,8 +128,7 @@ class LoginView extends GetView<LoginController> {
                     "Use Social Login",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Color(0xFF22215B),
-                      fontWeight: FontWeight.w400,
+                      color: Color(0xFF22215B).withOpacity(0.7),
                     ),
                   ),
                 ),
@@ -139,8 +149,7 @@ class LoginView extends GetView<LoginController> {
                     "Create an account",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Color(0xFF22215B),
-                      fontWeight: FontWeight.w400,
+                      color: Color(0xFF22215B).withOpacity(0.7),
                     ),
                   ),
                 ),
