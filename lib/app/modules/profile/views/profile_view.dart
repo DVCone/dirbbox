@@ -67,6 +67,7 @@ class ProfileView extends GetView<ProfileController> {
                       "Hakim Madani",
                       style: TextStyle(
                         fontSize: 18,
+                        color: Color(0xFF22215B),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -92,7 +93,7 @@ class ProfileView extends GetView<ProfileController> {
                 Align(
                   alignment: Alignment.topRight,
                   child: Container(
-                    width: 60,
+                    width: 50,
                     height: 30,
                     decoration: BoxDecoration(
                         color: Color(0xFFFF317B),
@@ -102,6 +103,7 @@ class ProfileView extends GetView<ProfileController> {
                         "PRO",
                         style: TextStyle(
                           color: Colors.white,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
@@ -118,6 +120,7 @@ class ProfileView extends GetView<ProfileController> {
                 "My Folders",
                 style: TextStyle(
                   fontSize: 16,
+                  color: Color(0xFF22215B),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -128,6 +131,7 @@ class ProfileView extends GetView<ProfileController> {
                     icon: Icon(
                       Icons.add,
                       size: 20,
+                      color: Color(0xFF22215B),
                     ),
                   ),
                   IconButton(
@@ -135,6 +139,7 @@ class ProfileView extends GetView<ProfileController> {
                     icon: Icon(
                       Icons.tune_rounded,
                       size: 20,
+                      color: Color(0xFF22215B),
                     ),
                   ),
                   IconButton(
@@ -142,6 +147,7 @@ class ProfileView extends GetView<ProfileController> {
                     icon: Icon(
                       Icons.arrow_forward_ios,
                       size: 20,
+                      color: Color(0xFF22215B),
                     ),
                   ),
                 ],
@@ -192,12 +198,16 @@ class ProfileView extends GetView<ProfileController> {
                 "Recent Uploads",
                 style: TextStyle(
                   fontSize: 16,
+                  color: Color(0xFF22215B),
                   fontWeight: FontWeight.bold,
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.filter_alt),
+                icon: Icon(
+                  Icons.filter_alt,
+                  color: Color(0xFF22215B),
+                ),
               ),
             ],
           ),
@@ -273,7 +283,10 @@ class CardFolder extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.topRight,
-            child: Icon(Icons.more_vert),
+            child: Icon(
+              Icons.more_vert,
+              color: Color(0xFF22215B),
+            ),
           )
         ],
       ),
