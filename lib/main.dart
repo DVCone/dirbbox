@@ -8,7 +8,7 @@ void main() {
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Application",
+      title: "DirbBox",
       initialRoute: Routes.LOGIN,
       getPages: AppPages.routes,
     ),
